@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(45deg, #cce7f3, #a2d4ec);
+      color: #4a4a4a;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .btn-custom {
+      background-color: #a2d4ec;
+      border: none;
+      color: #4a4a4a;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #87c4e3;
+      transform: translateY(-5px);
+    }
+    .img-fluid {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .img-fluid.loaded {
+      opacity: 1;
+    }
+    footer {
+      background: linear-gradient(45deg, #a2d4ec, #cce7f3);
+    }
+    .card-body h5 {
+      transition: opacity 0.4s ease, color 0.4s ease;
+    }
+    .card-body:hover h5 {
+      opacity: 0.7;
+      color: #a2d4ec;
+    }
+  </style>
+</head>
+<body>
+  <section class="vh-100 d-flex align-items-center justify-content-center gradient-bg text-center">
+    <div class="fade-in">
+      <h1 class="display-3 fw-bold">¡Hola! Soy Erick Sebastian Ortega Cervantes</h1>
+      <p class="lead">Soy un desarrollador con experiencia en lenguajes como JavaScript, C#, Python y PHP, apasionado por diseñar y construir soluciones innovadoras que combinan tecnología y creatividad. .</p>
+      <a href="#about" class="btn btn-custom btn-lg mt-3">Saber más</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/img/portafolio/yo.jpg" class="img-fluid rounded" alt="Sobre mí">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fade-in">Sobre mí</h2>
+          <p class="fade-in">Soy un desarrollador con experiencia en múltiples lenguajes de programación, entre los que destacan JavaScript, C#, C++, Python y PHP. Me siento especialmente cómodo trabajando con JavaScript y C#, lo que me ha permitido desarrollar aplicaciones robustas y dinámicas.
+
+            He trabajado con frameworks como React y Angular para crear interfaces de usuario intuitivas y escalables, y tengo experiencia en la gestión de bases de datos SQL, optimizando el almacenamiento y consulta de datos en proyectos complejos.
+            
+            Mi enfoque se centra en la resolución de problemas, el aprendizaje continuo y la creación de soluciones que impacten positivamente a los usuarios. Me motiva colaborar en proyectos innovadores que combinen tecnología y creatividad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Habilidades</h2>
+      <div class="row text-center">
+        <div class="col-md-4 fade-in card card-hover">
+          <img src="assets/img/portafolio/LP.png" class="img-fluid rounded mb-3" alt="Lenguajes">
+          <h4>Lenguajes de Programación</h4>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="col-md-4 fade-in  card card-hover">
+          <img src="assets/img/portafolio/FW.jpg" class="img-fluid rounded mb-3" alt="Frameworks">
+          <h4>Frameworks</h4>
+          <ul>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div class="col-md-4 fade-in  card card-hover">
+          <img src="assets/img/portafolio/BD.png" class="img-fluid rounded mb-3" alt="Bases de Datos">
+          <h4>Bases de Datos</h4>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Proyectos Destacados</h2>
+      <div class="row">
+        <div class="col-md-4 fade-in">
+          <div class="card card-hover">
+            <img src="assets/img/portafolio/ShopEasy.jpg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1: ShopEasy</h5>
+              <p class="card-text">ShopEasy es una aplicación móvil desarrollada con .NET MAUI que permite a los usuarios gestionar fácilmente sus listas de compras. Ofrece funcionalidades como agregar productos con detalles de cantidad y categoría, editar y eliminar productos para mantener la lista actualizada, agrupar elementos por categorías para facilitar la navegación y una interfaz personalizable con modo oscuro. La aplicación está diseñada para ser multiplataforma, funcionando tanto en dispositivos Android como iOS, utilizando SQLite para el almacenamiento local y el patrón de diseño MVVM para una arquitectura eficiente y escalable.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card card-hover">
+            <img src="assets/img/portafolio/Survival.jpg" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2: SurvivalLife</h5>
+              <p class="card-text">"SurvivalLife" es un videojuego de supervivencia creado en Unity en el que los jugadores deben enfrentar desafíos y tomar decisiones estratégicas para sobrevivir en un entorno hostil. En este juego, el jugador asume el rol de un personaje que se encuentra atrapado en una isla desierta después de un accidente, sin recursos ni herramientas a su disposición.
+
+                El objetivo principal del juego es sobrevivir el mayor tiempo posible, gestionando recursos, creando herramientas y construyendo refugios. Para lograrlo, el jugador debe explorar la isla, recolectar materiales como madera, piedras, y plantas, y usarlos para crear objetos que lo ayuden a sobrevivir, como hachas, antorchas y trampas.
+                El entorno en el juego es dinámico, con cambios en la hora del día y el clima.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card card-hover">
+            <img src="assets/img/portafolio/Inventario.png" class="card-img-info" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3: Sistema de inventario</h5>
+              <p class="card-text">El sistema de inventario para una tienda de abarrotes se centra en la gestión eficiente de productos que permiten controlar las existencias, realizar pedidos de reposición y llevar un seguimiento de las ventas. En este sistema, cada producto tiene un código único, que facilita su identificación y registro. A medida que los productos son recibidos en la tienda, se ingresan en el sistema con información como nombre, descripción, cantidad disponible, precio de venta y proveedor. El sistema también puede registrar el costo de adquisición, lo que ayuda a calcular las ganancias al momento de realizar la venta.
+                Cuando un cliente compra un producto, la cantidad disponible se actualiza automáticamente, y el sistema genera una alerta cuando el inventario de un artículo está por debajo de un umbral predefinido, lo que facilita la reposición de existencias. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="weaknesses" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Debilidades</h2>
+      <div class="row text-center">
+        <div class="col-md-6 fade-in">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Gestión del tiempo</h5>
+              <p class="card-text">Aunque soy eficiente en la mayoría de los casos, en proyectos muy grandes puedo tardar en establecer prioridades correctamente. Estoy trabajando en mejorar mi planificación y uso de herramientas de gestión de tiempo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Perfeccionismo</h5>
+              <p class="card-text">A veces me enfoco demasiado en los detalles, lo que puede retrasar la finalización de tareas. Sin embargo, estoy aprendiendo a encontrar un equilibrio para avanzar más rápido sin perder calidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5 text-black text-center">
+    <div class="container">
+      <h3>Contáctame</h3>
+      <p>Email:  sebasortega151003@gmail.com</p>
+      <p>Telefono: 449 565 7412</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.img-fluid').forEach(img => {
+      img.onload = () => {
+        img.classList.add('loaded');
+      };
+    });
+  
+    window.addEventListener('scroll', function () {
+      document.querySelectorAll('.fade-in').forEach(function (element) {
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+          element.classList.add('visible');
+        }
+      });
+    });
+  
+    window.addEventListener('load', function () {
+      window.scrollTo(0, 0);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

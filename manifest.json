@@ -1,0 +1,49 @@
+{
+    "name":"PortafolioPWA",
+    "short_name":"PWASebas",
+    "description":"Esta es mi portafolio de PWA",
+    "display":"standalone",
+    "start_url":"./?_source=web_app_manifest",
+    "background_color":"#0969ff",
+    "theme_color":"#0969ff",
+    "orientation":"portrait",
+    "scope":"./",
+    "lang":"es-MX",
+    "icons": [
+        {
+            "src":"img/16.png",
+            "sizes":"16x16",
+            "type":"image/png"
+        },
+        {
+            "src":"img/32.png",
+            "sizes":"32x32",
+            "type":"image/png"
+        },
+        {
+            "src":"img/64.png",
+            "sizes":"64x64",
+            "type":"image/png"
+        },
+        {
+            "src":"img/92.png",
+            "sizes":"92x92",
+            "type":"image/png"
+        },
+        {
+            "src":"img/128.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        },
+        {
+            "src":"img/196.png",
+            "sizes":"196x196",
+            "type":"image/png"
+        },
+        {
+            "src":"img/256.png",
+            "sizes":"256x256",
+            "type":"image/png"
+        }
+    ]
+}
